@@ -35,7 +35,7 @@ add the files we want to retain to the index and then use
 the simple version of the git clean command as above, git clean's interactive mode
 gives us more power. Let take it for a spin
 
-1. Open a terminal at the project root and run `./02-create-test-files` this generates another set of test files
+1. Open a terminal at the project root and run `./02-create-test-files.sh` this generates another set of test files
 2. Run `git status` that should give this output
 ```
 Untracked files:
@@ -70,7 +70,7 @@ What now>
 
 If there are lots of files we want to save then using a filter could be more efficient
 
-1. Open a terminal at the project root and run `./02-create-test-files` this generates another set of test files
+1. Open a terminal at the project root and run `./02-create-test-files.sh` this generates another set of test files
 2. Run `git clean -i` to start git clean in interactive mode
 3. This time enter f at the prompt
 4. enter '*.png' at the Input ignore patterns>> prompt
@@ -106,7 +106,7 @@ Removing created-file-9.txt
 #### Interactive mode selecting by numbers
 
 1. Run `git clean -f` to get back to initial state
-2. Run './02-create-test-files.sh' to generate test files
+2. Run `./02-create-test-files.sh` to generate test files
 3. Run `git clean -i` to enter interactive mode
 4. Enter s at the What now prompt
 5. At the select items to delete prompt enter some numbers for the files you want to remove followed by enter, You can do this more than once if you like
@@ -203,7 +203,7 @@ try running `git clean -fxq`
 ## Challenge
 
 1. Run `git clean -fd` to get back to initial state
-2. Run `./04-create-test-files.sh` to generate test files
+2. Run `./02-create-test-files.sh` to generate test files
 3. Come up with a git clean command that removes all untracked files apart from created-file-7.txt
 
-https://git-scm.com/docs/git-clean 
+https://git-scm.com/docs/git-clean
